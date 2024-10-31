@@ -55,7 +55,7 @@ val createFile = object : Action {
     override val likelyhood = 15
     override fun invoke() {
         val name = randomText(1) + randomText((0..30).random(random), separators)
-        val target = workdir.resolve(name)
+        val target = workdir.resolve(name.lowercase())
         if (!target.exists()) {
             target.writeText(randomFileContent((1..20000).random(random)))
             commit("create file $name")
