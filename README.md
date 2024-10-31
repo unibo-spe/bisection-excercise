@@ -3,7 +3,7 @@
 ## Prerequisites
 * Kotlin 2.0.20 or later
 
-## Usage
+## Generate an exercise
 
 ```console
 $ ./generate-exercise.main.kts [size [seed]]
@@ -11,6 +11,14 @@ The first commit is <first-commit-hash>
 The problematic commit introduces the string 'htl3EXgz2RG^u5=' in one of the files.
 Excercise with seed seed and depth size is ready in <folder>
 ```
+
+Square brackets mean "optional parameter" (as in classic UNIX Manuals).
+
+* `size` decides how difficult should the exercise be, in number of `git` operations performed on the repo.
+Defaults to 5000.
+* `seed` is used for reproducibility purposes (same size and seed lead to the same exercise).
+
+## Solve the exercise
 
 `cd into <folder>` and use `git` to find the commit that introduced the problem.
 If you can, solve the problem with two commands.
