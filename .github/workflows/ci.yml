@@ -14,7 +14,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ windows-2022, macos-14, ubuntu-24.04 ]
+        os:
+          # Windows is commented out because the same workflow that completes in 2 minutes on Linux takes
+          # over 6 hours on Windows.
+#          - windows-2022
+          - macos-14
+          - ubuntu-24.04
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
