@@ -39,7 +39,7 @@ fun randomFile() = checkNotNull(workdir.listFiles(FileFilter { it.isFile }) ).ra
 
 fun commit(message: String = randomText(50, listOf(' '))) = shellRun(workdir) {
     git.addAll()
-    git.commit(message)
+    git.gitCommand(listOf("commit", "--allow-empty", "-am", message))
 }.also { progressBar.extraMessage = message }
 
 fun branches(): List<String> = shellRun(workdir) {
