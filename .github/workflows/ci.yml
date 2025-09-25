@@ -18,7 +18,7 @@ jobs:
           # Windows is commented out because the same workflow that completes in 2 minutes on Linux takes
           # over 6 hours on Windows.
 #          - windows-2025
-          - macos-14
+          - macos-15
           - ubuntu-24.04
     runs-on: ${{ matrix.os }}
     steps:
