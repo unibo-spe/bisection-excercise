@@ -1,7 +1,7 @@
 #!/usr/bin/env kotlin
 // Import Koltin turtle to interact with the shell
 @file:DependsOn("com.lordcodes.turtle:turtle:0.10.0")
-@file:DependsOn("me.tongfei:progressbar:0.10.1")
+@file:DependsOn("me.tongfei:progressbar:0.10.2")
 
 import com.lordcodes.turtle.shellRun
 import me.tongfei.progressbar.ProgressBar
