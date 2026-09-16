@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-java@v6.0.1
         with:
           distribution: 'temurin'
-          java-version: '22.0.2+9'
+          java-version: '23.0.2+7'
       - name: Generate Repository
         run: ./generate-exercise.main.kts
       - name: Regression test 5000 / 1730376609342
