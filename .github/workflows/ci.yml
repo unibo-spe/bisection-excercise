@@ -37,7 +37,7 @@ jobs:
       - name: Regression test 5000 / 1730385198056
         run: ./generate-exercise.main.kts 5000 1730385198056
   success:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     needs:
       - generate-repo
     if: >-
